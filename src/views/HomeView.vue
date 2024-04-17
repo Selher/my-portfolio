@@ -10,7 +10,7 @@
             <p class="p1">Hello! I'm Salma Hersi, and welcome to my portfolio. </p>  
             <p class="p1">As a dedicated multimedia design student, I thrive on pushing the boundaries of creativity and embracing innovative approaches. My journey in multimedia design is fueled by a profound passion for content creation and front-end development, where each project serves as a canvas for me to blend imagination with technical proficiency.</p>
             <p class="p1">Join me as I embark on a quest to transform ideas into captivating digital experiences that resonate with audiences.</p>
-            <button class="top-button" @click="scrollToAbout">More about me</button>
+            <button class="top-button" @click="scrollToAbout">MORE ABOUT ME</button>
         </div>
     </div>
     <!-- Project afsnit -->
@@ -22,30 +22,43 @@
     <div class="card-container">
     <div class="project-card">
         
-      <h3>La Cabra</h3>
-      <p>First website</p>
+      <h3>Design & Development</h3>
+      <p>Website for La Cabra</p>
+      <!-- billede ind her -->
       <button class="see-more-button">SEE MORE</button>
     </div>
+
     <div class="project-card">
-      <h3>Project 2</h3>
-      <p>This is the content of card 2.</p>
+      <h3>Design & Development</h3>
+      <p>Website for Trapholt</p>
+      <!-- billede ind her -->
+      <button class="see-more-button">SEE MORE</button>
     </div>
+
     <div class="project-card">
-      <h3>Project 3</h3>
-      <p>This is the content of card 3.</p>
+      <h3>Content Creation</h3>
+      <p>Infographics for Trapholt</p>
+      <img class="infographic-img-1" src="" alt="">
+      <img class="infographic-img-2" src="" alt="">
+      <button class="see-more-button">SEE MORE</button>
     </div>
+
     <div class="project-card">
-      <h3>Project 4</h3>
-      <p>This is the content of card 3.</p>
+      <h3>Content Creation</h3>
+      <p>Sustainia Poster</p>
+      <img class="sustainia-img-1" src="" alt="">
+      <img class="sustainia-img-2" src="" alt="">
+      <button class="see-more-button">SEE MORE</button>
     </div>
+
     <div class="project-card">
-      <h3>Project 5</h3>
-      <p>This is the content of card 3.</p>
+      <h3>User Experience</h3>
+      <p>ReOps App</p>
+      <img class="repos-img" src="" alt="">
+      <button class="see-more-button">SEE MORE</button>
     </div>
-    <div class="project-card">
-      <h3>Project </h3>
-      <p>This is the content of card 3.</p>
-    </div>
+
+    
   </div>
 </div>
 
@@ -63,7 +76,7 @@
         <p>I am deeply enthusiastic about design and web development. I love the whole creative journey, from coming up with ideas to finishing a project. Collaborating within a team environment is something I cherish greatly, as it allows me to contribute and thrive alongside like-minded individuals.I'm super curious about everything around me, I thoroughly enjoy meeting new people, exchanging thoughts, and most importantly, working together to bring forth remarkable creations. This curiosity also drives me to keep learning new skills and staying up-to-date with the latest trends. This curiosity also drives me to keep learning new skills and staying up-to-date with the latest trends. 
         </p>
         <p>Want to know more you're welcome to read my CV below or click and watch my video cv</p>
-        <button class="cv-button">Download CV</button>
+        <button class="cv-button">DOWNLOAD CV</button>
         
     </div>
         <div class="card-column">
