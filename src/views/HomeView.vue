@@ -2,7 +2,7 @@
     <main>
        <div class="image-text-container">
         <div class="image-box">
-            <img src="../assets/me.jpg" alt="Your Image">
+            <img class="me-img" src="../assets/me.jpg" alt="Your Image">
         </div>
 
         <div class="intro-text">
@@ -21,8 +21,10 @@
 
     <div class="card-container">
     <div class="project-card">
-      <h3>Project 1</h3>
-      <p>This is the content of card 1.</p>
+        
+      <h3>La Cabra</h3>
+      <p>First website</p>
+      <button class="see-more-button">SEE MORE</button>
     </div>
     <div class="project-card">
       <h3>Project 2</h3>
@@ -167,7 +169,7 @@
         margin-right: auto;
         padding: 90px 90px;
          
-        flex: 0 0 50%;
+       
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -177,7 +179,7 @@
 
     .image-box{
         width: 50%;
-        height: 535px;
+        height: auto;
         background-color: black;
         display: flex;
         justify-content: center;
@@ -186,7 +188,7 @@
 
         
      }
-    img{
+    .me-img{
         width: 50%;
         height: 250px;
         object-fit: cover;
@@ -249,7 +251,7 @@
     }
   
     .p1 {
-        font-size: 10px; /* Decrease font size for smaller screens */
+        font-size: 16px; /* Decrease font size for smaller screens */
         
     }
   
@@ -263,6 +265,10 @@
 
     /* Projects afsnit */
 
+    .projects{
+        margin-top: 100px;
+        
+    }
     h2{
         display: inline-block;
         font-size: 30px;
@@ -289,6 +295,21 @@
   
   
 }
+.see-more-button{
+    background-color: black;
+        color: white;
+        padding: 10px;
+        border: none;
+        
+        
+    }
+    .see-more-button:hover{
+        background-color: #333;
+        color: white;
+    }
+
+
+
 
 @media screen and (max-width: 768px) {
   .project-card {
@@ -403,6 +424,7 @@ h2{
     max-width: 70%;
     justify-content: space-between;
     
+
   
 }
 
@@ -446,7 +468,7 @@ h2{
 
 .card-column-contact-1 {
     text-align: left;
-        padding-left: 10%;
+        padding:20px;
         width: 400px;
         line-height: 1.6; 
         margin-top: 50px
@@ -459,7 +481,7 @@ h2{
         padding-bottom: 20px;
         width: 400px;
         line-height: 1.6;
-        padding: 20px;
+        
         margin-top: 10px;
 }
 
