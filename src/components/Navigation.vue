@@ -6,7 +6,7 @@ import { RouterLink } from 'vue-router';
 <template>
     <div>
         <header>
-            <nav class="container">
+            <nav id="start" class="container">
                 <div class="my-portfolio">
                     <h1>Salma Hersi</h1>
                 </div>
@@ -20,11 +20,11 @@ import { RouterLink } from 'vue-router';
                 </ul> -->
 
                 <ul class="nav-routes">
-                    <li><RouterLink to="/">Home</RouterLink></li>
-                    <li><RouterLink to="/projects">Projects</RouterLink></li>
-                    <li><a href="#about">About</a></li>
-                  <!--   <li><RouterLink to="/about">About</RouterLink></li> -->
-                    <li><RouterLink to="/contact">Contact</RouterLink></li>
+                                      
+                    <li><a href="#project">PROJECTS</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                  
                 </ul> 
             </nav>
         </header>

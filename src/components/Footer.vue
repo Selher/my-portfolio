@@ -10,6 +10,12 @@ import { RouterLink } from 'vue-router';
                 <div class="my-portfolio">
                     <h1>Salma Hersi</h1>
                 </div>
+                <ul class="foot-routes">
+                                      
+                 <li><a href="#start">BACK TO TOP</a></li>
+                                      
+                                    
+                </ul> 
                
             </nav>
         </header>
@@ -46,6 +52,30 @@ import { RouterLink } from 'vue-router';
                 font-weight: 700;
             }
         }
+        }
+
+        .foot-routes{
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+            gap:12px;
+            list-style: none;
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+
+            li{
+                padding: 8px 16px;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+
+                &:hover{
+                    background-color: #333;
+                }
+            }
+
         }
 
         

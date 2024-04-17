@@ -7,12 +7,14 @@
 
         <div class="intro-text">
             <h1>Welcome</h1>
-            <p class="p1">My name is Salma Hersi and this is my portfolio. I'm a multimedia design student with a prefrence for innovative thinking, a strong passion for content creation and front-end development. </p>  
+            <p class="p1">Hello! I'm Salma Hersi, and welcome to my portfolio. </p>  
+            <p class="p1">As a dedicated multimedia design student, I thrive on pushing the boundaries of creativity and embracing innovative approaches. My journey in multimedia design is fueled by a profound passion for content creation and front-end development, where each project serves as a canvas for me to blend imagination with technical proficiency.</p>
+            <p class="p1">Join me as I embark on a quest to transform ideas into captivating digital experiences that resonate with audiences.</p>
             <button class="top-button" @click="scrollToAbout">More about me</button>
         </div>
     </div>
     <!-- Project afsnit -->
-<div class="projet-section">
+<div id="project" class="projet-section">
     <div class="projects">
       <h2>PROJECTS</h2>
     </div>
@@ -76,7 +78,7 @@
     </div>
     
     <!-- Contact section -->
-    <div class="contact">
+    <div id="contact" class="contact">
       
         <div class="contact">
             <h2>CONTACT</h2>
@@ -161,8 +163,8 @@
        max-width: 50%;
         width: 50%;
         margin-right: auto;
-        padding: 165px 16px;
-        margin-right: 20px; 
+        padding: 90px 90px;
+         
         flex: 0 0 50%;
         flex-direction: column;
         justify-content: center;
@@ -173,7 +175,7 @@
 
     .image-box{
         width: 50%;
-        height: 500px;
+        height: 535px;
         background-color: black;
         display: flex;
         justify-content: center;
@@ -194,7 +196,6 @@
     
     h1{
         font-size: 40px;
-        /* margin-top: 25px; */
         margin-bottom: 25px;
         margin-left: 5%;
       
@@ -204,7 +205,7 @@
     .p1{
         text-align: left;
         padding-bottom: 20px;
-        width: 500px;
+        width: auto;
         margin-left:5%;
         line-height: 1.6; 
     }
@@ -223,7 +224,40 @@
         color: white;
     }
 
+    @media screen and (max-width: 768px) {
+  
+
+  h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    .image-text-container {
+        flex-direction: row;
+    }
+
+    .image-box {
+    width: 100%; /* Full width for columns on smaller screens */
     
+  }
+    .intro-text{
+        max-width: 100%;
+        width: 100%;
+        padding: 20px;
+        margin-right: 0;
+    }
+  
+    .p1 {
+        font-size: 13px; /* Decrease font size for smaller screens */
+        
+    }
+  
+
+  .top-button {
+    width: 100%; /* Make button full width on smaller screens */
+    
+  }
+
+}
 
     /* Projects afsnit */
 
@@ -301,7 +335,7 @@ h2{
 .card-column p {
      text-align: left;
         padding-bottom: 20px;
-        width: 400px;
+        width: auto;
         line-height: 1.6; 
 }
 .cv-button{
@@ -356,20 +390,23 @@ h2{
 /* Contact section */
 .contact{
     margin-top: 100px;
+    
 }
 .contact-card {
     display: flex;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
     margin: auto;
-    
+    margin-bottom: 50px;
     border: black 2px solid;
     max-width: 70%;
     justify-content: space-between;
+    
   
 }
 
 .card-column-contact {
     width: 48%;
+   
 }
 
 .contact-black-box {
@@ -384,8 +421,6 @@ h2{
     padding-bottom: 25px;
     padding-left: 20px;
     font-size: 30px;
-    
-   
     margin-top:50px ;
     
 }
@@ -394,10 +429,9 @@ h2{
 
 
 .contact-p{text-align: left;
-        padding-bottom: 20px;
-        width: 400px;
+        width: auto;
         line-height: 1.6;
-        padding-left: 20px;
+        padding: 0px 20px 20px 20px;
 }
 
 
