@@ -86,6 +86,7 @@
 
         <div class="contact-card">
             <div class="card-column-contact">
+                
                     <div class="contact-black-box">
                         <h4 class="get-in-touch">Get in touch</h4>
                         <p class="contact-p">
@@ -102,13 +103,14 @@
                             Let's work together to bring your vision to life !
                         </p>
                     </div>
-            </div>
+                
+            </div>  
 
             
 
             <div class="card-column-contact-1"> <!-- make this into links and add icons -->
                 
-                <h3>
+                <h3 class="contact-info">
                     Contact information
                 </h3>
 
@@ -242,12 +244,12 @@
     .intro-text{
         max-width: 100%;
         width: 100%;
-        padding: 20px;
+        padding: 80px;
         margin-right: 0;
     }
   
     .p1 {
-        font-size: 13px; /* Decrease font size for smaller screens */
+        font-size: 10px; /* Decrease font size for smaller screens */
         
     }
   
@@ -413,7 +415,8 @@ h2{
     background-color: black;
     color: white; 
     height: 350px;
-    width: 450px;
+    width: 100%;
+    
 }
 .get-in-touch{
     display: inline-block;
@@ -429,10 +432,15 @@ h2{
 
 
 .contact-p{text-align: left;
+        
         width: auto;
         line-height: 1.6;
         padding: 0px 20px 20px 20px;
+        
 }
+
+
+
 
 
 
@@ -444,6 +452,8 @@ h2{
         margin-top: 50px
         
 }
+
+
 .contact-links{
     text-align: left;
         padding-bottom: 20px;
@@ -454,4 +464,23 @@ h2{
 }
 
 
+@media screen and (max-width: 768px) {
+    .contact-card {
+        flex-direction: column;
+    }
+    h2 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    .card-column-contact {
+    width: 100%; /* Full width for columns on smaller screens */
+    }
+    
+    .contact-column-contact-1{
+        width: 100%;
+    }
+    
+  
+}
     </style>
+
