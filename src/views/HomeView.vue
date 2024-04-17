@@ -24,40 +24,52 @@
         
       <h3>Design & Development</h3>
       <p>Website for La Cabra</p>
-      <!-- billede ind her -->
+      <img class="lacabra-img-1" src="../assets/lacabra-img-1.png" alt="">
+      <img class="lacabra-img-2" src="../assets/lacabra-img-2.png" alt="">
       <button class="see-more-button">SEE MORE</button>
     </div>
 
     <div class="project-card">
       <h3>Design & Development</h3>
       <p>Website for Trapholt</p>
-      <!-- billede ind her -->
+      <img class="trapholt-img-1" src="../assets/trapholt-img-1.png" alt="">
+      <img class="trapholt-img-2" src="../assets/trapholt-img-2.png" alt="">
       <button class="see-more-button">SEE MORE</button>
     </div>
 
     <div class="project-card">
       <h3>Content Creation</h3>
       <p>Infographics for Trapholt</p>
-      <img class="infographic-img-1" src="" alt="">
-      <img class="infographic-img-2" src="" alt="">
+      <img class="infographic-img-1" src="../assets/infographic-img-1.png" alt="">
+      <img class="infographic-img-2" src="../assets/infographic-img-2.png" alt="">
       <button class="see-more-button">SEE MORE</button>
     </div>
 
     <div class="project-card">
       <h3>Content Creation</h3>
       <p>Sustainia Poster</p>
-      <img class="sustainia-img-1" src="" alt="">
-      <img class="sustainia-img-2" src="" alt="">
+      <img class="sustainia-img-1" src="../assets/sustainia-img-1.JPEG" alt="">
+      <img class="sustainia-img-2" src="../assets/sustainia-img-2.JPEG" alt="">
+      <button class="see-more-button">SEE MORE</button>
+    </div>
+
+    <div class="project-card">
+      <h3>Content Creation</h3>
+      <p>Invitation</p>
+      <img class="invitation-img-1" src="../assets/invitation-img-1.jpg" alt="">
+      <img class="invitation-img-2" src="../assets/invitation-img-2.jpg" alt="">
       <button class="see-more-button">SEE MORE</button>
     </div>
 
     <div class="project-card">
       <h3>User Experience</h3>
       <p>ReOps App</p>
-      <img class="repos-img" src="" alt="">
+      <img class="repos-img" src="../assets/repos-img.png" alt="">
+      <img class="repos-img" src="../assets/repos-img-2.png" alt="">
       <button class="see-more-button">SEE MORE</button>
     </div>
 
+    
     
   </div>
 </div>
@@ -308,6 +320,73 @@
   
   
 }
+.lacabra-img-1{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.lacabra-img-2{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.trapholt-img-1{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.trapholt-img-2{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.infographic-img-1{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.infographic-img-2{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.sustainia-img-1{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.sustainia-img-2{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.invitation-img-1{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.invitation-img-2{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.repos-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
 .see-more-button{
     background-color: black;
         color: white;
