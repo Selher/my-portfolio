@@ -1,0 +1,423 @@
+<template>
+    <main>
+       <div class="image-text-container">
+        <div class="image-box">
+            <img src="../assets/me.jpg" alt="Your Image">
+        </div>
+
+        <div class="intro-text">
+            <h1>Welcome</h1>
+            <p class="p1">My name is Salma Hersi and this is my portfolio. I'm a multimedia design student with a prefrence for innovative thinking, a strong passion for content creation and front-end development. </p>  
+            <button class="top-button" @click="scrollToAbout">More about me</button>
+        </div>
+    </div>
+    <!-- Project afsnit -->
+<div class="projet-section">
+    <div class="projects">
+      <h2>PROJECTS</h2>
+    </div>
+
+    <div class="card-container">
+    <div class="project-card">
+      <h3>Project 1</h3>
+      <p>This is the content of card 1.</p>
+    </div>
+    <div class="project-card">
+      <h3>Project 2</h3>
+      <p>This is the content of card 2.</p>
+    </div>
+    <div class="project-card">
+      <h3>Project 3</h3>
+      <p>This is the content of card 3.</p>
+    </div>
+    <div class="project-card">
+      <h3>Project 4</h3>
+      <p>This is the content of card 3.</p>
+    </div>
+    <div class="project-card">
+      <h3>Project 5</h3>
+      <p>This is the content of card 3.</p>
+    </div>
+    <div class="project-card">
+      <h3>Project </h3>
+      <p>This is the content of card 3.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- About section -->
+
+<div id="about" class="about">
+      <h2>ABOUT</h2>
+    </div>
+
+<div class="about-card">
+
+    <div class="card-column">
+        <h3>More about who i am</h3>
+        <p>I am deeply enthusiastic about design and web development. I love the whole creative journey, from coming up with ideas to finishing a project. Collaborating within a team environment is something I cherish greatly, as it allows me to contribute and thrive alongside like-minded individuals.I'm super curious about everything around me, I thoroughly enjoy meeting new people, exchanging thoughts, and most importantly, working together to bring forth remarkable creations. This curiosity also drives me to keep learning new skills and staying up-to-date with the latest trends. This curiosity also drives me to keep learning new skills and staying up-to-date with the latest trends. 
+        </p>
+        <p>Want to know more you're welcome to read my CV below or click and watch my video cv</p>
+        <button class="cv-button">Download CV</button>
+        
+    </div>
+        <div class="card-column">
+            <h3>Video introduction</h3>
+            <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/6X-jy1rCrCE"
+            frameborder="0"
+            allowfullscreen
+            ></iframe>
+        </div>
+
+    </div>
+    
+    <!-- Contact section -->
+    <div class="contact">
+      
+        <div class="contact">
+            <h2>CONTACT</h2>
+        </div>
+
+        <div class="contact-card">
+            <div class="card-column-contact">
+                    <div class="contact-black-box">
+                        <h4 class="get-in-touch">Get in touch</h4>
+                        <p class="contact-p">
+                            I would love to hear from you ! 
+                           
+                        </p>
+                        <p class="contact-p">
+                            
+                            If you have any questions or would like to work together, feel free to contact me. I'm always open to new opportunities and collaborations.
+                            
+                        </p>
+                        <p class="contact-p">
+                           
+                            Let's work together to bring your vision to life !
+                        </p>
+                    </div>
+            </div>
+
+            
+
+            <div class="card-column-contact-1"> <!-- make this into links and add icons -->
+                
+                <h3>
+                    Contact information
+                </h3>
+
+                <p class="contact-links">
+                    +45 20917773
+                </p>
+                <p class="contact-links">
+                    salma-hersi@hotmail.com
+                </p>
+                <p class="contact-links">
+                    www.linkedin.com/in/salmahersi
+                </p>
+            </div>
+
+            
+
+        </div>
+
+    </div>
+
+    </main>
+</template>
+    
+    <script setup>
+    /* get to know me knappen */
+    const scrollToAbout = () => {
+        const aboutSection = document.querySelector('.about');
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    
+  
+    </script>
+    
+    <style lang="scss" scoped>
+    /* main{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       max-width: 550px;
+       margin: 0 auto;
+       padding: 40px 16px; 
+
+       ingen grund til at give din main en styles fordi den virker bedre uden.
+           
+    }  */ 
+    .image-text-container{
+        display: flex;
+    }
+
+     .intro-text{
+       max-width: 50%;
+        width: 50%;
+        margin-right: auto;
+        padding: 165px 16px;
+        margin-right: 20px; 
+        flex: 0 0 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        
+    } 
+
+    .image-box{
+        width: 50%;
+        height: 500px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        
+     }
+    img{
+        width: 50%;
+        height: 250px;
+        object-fit: cover;
+         
+     } 
+
+     
+
+    
+    h1{
+        font-size: 40px;
+        /* margin-top: 25px; */
+        margin-bottom: 25px;
+        margin-left: 5%;
+      
+        
+    }
+
+    .p1{
+        text-align: left;
+        padding-bottom: 20px;
+        width: 500px;
+        margin-left:5%;
+        line-height: 1.6; 
+    }
+
+
+    .top-button{
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        
+        margin-left: 5%;
+    }
+    .top-button:hover{
+        background-color: #333;
+        color: white;
+    }
+
+    
+
+    /* Projects afsnit */
+
+    h2{
+        display: inline-block;
+        font-size: 30px;
+        margin-left: 15%;
+        margin-bottom: 30px;
+        border-bottom: 2px solid black;
+    }
+
+    .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribute cards evenly in the container */
+  max-width: 70%;
+  margin: auto;
+    }
+
+.project-card {
+  width: calc(33.33% - 20px); /* Adjust width of each card */
+  background-color: white;
+  margin-bottom: 15px;
+  padding: 20px;
+  
+  border: black 2px solid;
+  
+  
+}
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    width: calc(50% - 20px); /* Adjust width for smaller screens */
+  }
+  h2 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+}
+
+
+/* About section */
+
+h2{
+        display: inline-block;
+        font-size: 30px;
+        margin-left: 15%;
+        margin-bottom: 30px;
+        margin-top:20px ;
+        border-bottom: 2px solid black;
+    }
+.about{
+    margin-top: 100px;
+
+}
+.about-card {
+  background-color: #fff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  padding: 20px; /* Padding inside the card */
+  margin: auto;
+  border: black 2px solid;
+  max-width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-column {
+  width: 48%; 
+}
+
+.card-column h3 {
+  margin-top: 0;
+  margin-bottom: 5%; 
+}
+
+.card-column p {
+     text-align: left;
+        padding-bottom: 20px;
+        width: 400px;
+        line-height: 1.6; 
+}
+.cv-button{
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        
+        
+    }
+    .cv-button:hover{
+        background-color: #333;
+        color: white;
+    }
+
+    
+    @media screen and (max-width: 768px) {
+  
+
+  h2 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    .about-card {
+        flex-direction: column;
+    }
+
+    .card-column {
+    width: 100%; /* Full width for columns on smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .card-column h3 {
+    font-size: 18px; /* Decrease font size for smaller screens */
+    margin-bottom: 5px; /* Adjust margin for smaller screens */
+  }
+
+    .card-column p {
+        font-size: 16px; /* Decrease font size for smaller screens */
+        
+    }
+  
+
+  .cv-button {
+    width: 100%; /* Make button full width on smaller screens */
+    margin-top: 15px; /* Adjust margin for smaller screens */
+  }
+
+}
+
+
+/* Contact section */
+.contact{
+    margin-top: 100px;
+}
+.contact-card {
+    display: flex;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    margin: auto;
+    
+    border: black 2px solid;
+    max-width: 70%;
+    justify-content: space-between;
+  
+}
+
+.card-column-contact {
+    width: 48%;
+}
+
+.contact-black-box {
+    background-color: black;
+    color: white; 
+    height: 350px;
+    width: 450px;
+}
+.get-in-touch{
+    display: inline-block;
+    text-align: left;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    font-size: 30px;
+    
+   
+    margin-top:50px ;
+    
+}
+
+
+
+
+.contact-p{text-align: left;
+        padding-bottom: 20px;
+        width: 400px;
+        line-height: 1.6;
+        padding-left: 20px;
+}
+
+
+
+.card-column-contact-1 {
+    text-align: left;
+        padding-left: 10%;
+        width: 400px;
+        line-height: 1.6; 
+        margin-top: 50px
+        
+}
+.contact-links{
+    text-align: left;
+        padding-bottom: 20px;
+        width: 400px;
+        line-height: 1.6;
+        padding: 20px;
+        margin-top: 10px;
+}
+
+
+    </style>
