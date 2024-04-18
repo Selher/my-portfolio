@@ -9,8 +9,8 @@
             <p class="p1">This project was in collaboration with finance economics students and was inspired by sustainability. We were tasked with choosing an area around the school and optimize it. Biodiversity was chosen for this purpose. A classmate and I designed these posters for the pitch, which the rest of the group worked on. The poster was made with the Adobe programs InDesign, Illustrator and Photoshop.</p>
         </div>
             <div class="card-column">
-                <img class="trapholt-img-1" src="../assets/sustainia-img-1.JPEG" alt="">
-                <img class="trapholt-img-2" src="../assets/sustainia-img-2.JPEG" alt="">
+                <img class="trapholt-img-1" src="../assets/sustainia-img-1.jpeg" alt="">
+                <img class="trapholt-img-2" src="../assets/sustainia-img-2.jpeg" alt="">
             </div>
 
         </div>

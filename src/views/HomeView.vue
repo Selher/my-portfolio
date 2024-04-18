@@ -163,7 +163,7 @@
                 </p>
                 <p class="contact-links">
                     <i class="fab fa-linkedin"></i>
-                    www.linkedin.com/in/salmahersi
+                    www.linkedin.com/in/salher
                 </p>
             </div>
 

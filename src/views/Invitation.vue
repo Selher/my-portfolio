@@ -6,7 +6,7 @@
         <div class="card-column">
             <h3>Content Creation</h3>
             <p>Invitation</p>
-            <p class="p1">This was for our student couslor at school </p>
+            <p class="p1">This invitation was made for EASV' school counslor' 50th birthday. It was made in Adobe InDesign and was designed to be a folder so it was printed on both sides</p>
         </div>
             <div class="card-column">
                 <img class="trapholt-img-1" src="../assets/invitation-img-1.jpg" alt="">

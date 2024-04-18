@@ -1,11 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import LaCabra from '../views/LaCabra.vue'
-import Trapholt from '../views/Trapholt.vue'
-import Infographic from '../views/Infographics.vue'
-import Sustainia from '@/views/Sustainia.vue'
-import Invitation from '@/views/Invitation.vue'
-import Reops from '@/views/Reops.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
