@@ -55,7 +55,7 @@ const router = createRouter({
       path: '/reops',
       name: 'reops',
       
-      component: () => import('../views/Invitation.vue')
+      component: () => import('../views/Reops.vue')
 
     },
     /* {
