@@ -2,7 +2,7 @@
     <main>
        <div class="image-text-container">
         <div class="image-box">
-            <img class="me-img" src="../assets/selfie.JPEG" alt="Your Image">
+            <img class="me-img" src="../assets/selfie.jpeg" alt="Your Image">
         </div>
 
         <div class="intro-text">
@@ -128,19 +128,21 @@
                 
                     <div class="contact-black-box">
                         <h4 class="get-in-touch">Get in touch</h4>
-                        <p class="contact-p">
-                            I would love to hear from you ! 
-                           
-                        </p>
-                        <p class="contact-p">
+                        <div class="contact-text">
+                            <p class="contact-p">
+                                I would love to hear from you ! 
                             
-                            If you have any questions or would like to work together, feel free to contact me. I'm always open to new opportunities and collaborations.
+                            </p>
+                            <p class="contact-p">
+                                
+                                If you have any questions or would like to work together, feel free to contact me. I'm always open to new opportunities and collaborations.
+                                
+                            </p>
+                            <p class="contact-p">
                             
-                        </p>
-                        <p class="contact-p">
-                           
-                            Let's work together to bring your vision to life !
-                        </p>
+                                Let's work together to bring your vision to life !
+                            </p>
+                        </div>
                     </div>
                 
             </div>  
@@ -270,23 +272,27 @@
 
     @media screen and (max-width: 768px) {
   
-
+    
   h1 {
         font-size: 20px; /* Adjust font size for smaller screens */
     }
-
+    
     .image-text-container {
-        flex-direction: row;
+    flex-direction: column; /* Change direction of flex container for smaller screens */
+
     }
 
     .image-box {
-    width: 100%; /* Full width for columns on smaller screens */
+    display: none;
     
+  }
+  .me-img {
+    display: none;
   }
     .intro-text{
         max-width: 100%;
         width: 100%;
-        padding: 80px;
+        padding: 64.5px;
         margin-right: 0;
     }
   
@@ -296,10 +302,7 @@
     }
   
 
-  .top-button {
-    width: 100%; /* Make button full width on smaller screens */
-    
-  }
+  
 
 }
 
@@ -329,78 +332,93 @@
   width: calc(33.33% - 20px); /* Adjust width of each card */
   background-color: white;
   margin-bottom: 15px;
-  padding: 20px;
+  padding: 10px;
   
   border: black 2px solid;
-  
+  overflow: hidden; /* Hide overflowing content */
   
 }
+
+
+
 .lacabra-img-1{
     width: 100%;
     height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
+    object-fit: contain;
 }
 .lacabra-img-2{
     width: 100%;
     height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
+    object-fit: contain;
 }
 .trapholt-img-1{
     width: 100%;
     height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
+    object-fit: contain;
 }
 .trapholt-img-2{
     width: 100%;
     height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
+    object-fit: contain;
 }
 .infographic-img-1{
     width: 100%;
     height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
+    object-fit: contain;
 }
 .infographic-img-2{
     width: 100%;
     height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
+    object-fit: contain;
 }
 .sustainia-img-1{
     width: 100%;
     height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
+    object-fit: contain;
 }
 .sustainia-img-2{
     width: 100%;
     height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
+    object-fit: contain;
 }
 .invitation-img-1{
     width: 100%;
     height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
+    object-fit: contain;
 }
 .invitation-img-2{
     width: 100%;
     height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
+    object-fit: contain;
 }
 .repos-img{
     width: 100%;
     height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
+    object-fit: contain;
 }
+
 
 .see-more-button{
     background-color: black;
@@ -419,12 +437,18 @@
 
 
 @media screen and (max-width: 768px) {
+    .projects{
+        margin-top: 50px;
+        
+    }
   .project-card {
     width: calc(50% - 20px); /* Adjust width for smaller screens */
   }
   h2 {
         font-size: 20px; /* Adjust font size for smaller screens */
     }
+    
+
 }
 
 
@@ -484,6 +508,10 @@ h2{
     
     @media screen and (max-width: 768px) {
   
+    .about{
+        margin-top: 50px;
+        
+    }
 
   h2 {
         font-size: 20px; /* Adjust font size for smaller screens */
@@ -543,28 +571,33 @@ h2{
 .contact-black-box {
     background-color: black;
     color: white; 
-    height: 350px;
+    height: 100%;
     width: 100%;
     
 }
 .get-in-touch{
     display: inline-block;
     text-align: left;
-    padding-bottom: 25px;
-    padding-left: 20px;
+    
+    padding: 20px 0px 0px 20px;
     font-size: 30px;
-    margin-top:50px ;
+    
     
 }
 
+.contact-text{
+    padding: 20px;
+}
 
-
+.contact-info{
+    padding-bottom: 20px;
+}
 
 .contact-p{text-align: left;
         
         width: auto;
         line-height: 1.6;
-        padding: 0px 20px 20px 20px;
+        padding: auto;
         
 }
 
@@ -576,24 +609,28 @@ h2{
 .card-column-contact-1 {
     text-align: left;
         padding:20px;
-        width: 400px;
+        width: 48%;
         line-height: 1.6; 
-        margin-top: 50px
         
+               
 }
 
 
 .contact-links{
     text-align: left;
-        padding-bottom: 20px;
-        width: 400px;
+        padding-bottom: 25px;
+        
         line-height: 1.6;
         
-        margin-top: 10px;
+        
 }
 
 
 @media screen and (max-width: 768px) {
+    .contact{
+        margin-top: 50px;
+        
+    }
     .contact-card {
         flex-direction: column;
     }
@@ -607,8 +644,15 @@ h2{
     
     .contact-column-contact-1{
         width: 100%;
+       
     }
+
     
+    
+
+
+
+
   
 }
     </style>
