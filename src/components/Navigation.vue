@@ -11,9 +11,13 @@ import { RouterLink } from 'vue-router';
                     <h1>Salma Hersi</h1>
                 </div>
                
+                <ul class="nav-route">
+                    <li><a href="/">HOME</a></li>                  
+                                      
+                </ul> 
 
                 <ul class="nav-routes">
-                    <li><a href="/">HOME</a></li>                  
+                    <li><a href="/">HOME</a></li>              
                     <li><a href="#project">PROJECTS</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#contact">CONTACT</a></li>
@@ -56,7 +60,7 @@ import { RouterLink } from 'vue-router';
         }
         }
 
-        .nav-routes{
+        .nav-routes {
             display: flex;
             flex: 1;
             justify-content: flex-end;
@@ -80,7 +84,29 @@ import { RouterLink } from 'vue-router';
 
         }
 
-        
+        .nav-route {
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+            gap:12px;
+            list-style: none;
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+
+            li{
+                padding: 8px 16px;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+
+                &:hover{
+                    background-color: #333;
+                }
+            }
+
+        }
         
                 
 
@@ -106,6 +132,15 @@ import { RouterLink } from 'vue-router';
         }
 
         header nav .nav-routes{
+            display: none;
+        }
+
+        
+    }
+    @media screen and (min-width: 768px) {
+       
+
+        header nav .nav-route{
             display: none;
         }
 
