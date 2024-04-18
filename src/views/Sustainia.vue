@@ -4,13 +4,13 @@
         <div class="trapholt-card">
 
         <div class="card-column">
-            <h3>Design & Development</h3>
-            <p>Website for Trapholt</p>
-            <p class="p1">This project was made in a group of four. We had to create a new website for the museum Trapholt for a specific target group. A classmate and I designed it in Adobe XD and then we coded it I Visual Studio Code. </p>
+            <h3>Content Creation</h3>
+            <p>Sustainia Poster</p>
+            <p class="p1">This project was in collaboration with finance economics students and was inspired by sustainability. We were tasked with choosing an area around the school and optimize it. Biodiversity was chosen for this purpose. A classmate and I designed these posters for the pitch, which the rest of the group worked on. The poster was made with the Adobe programs InDesign, Illustrator and Photoshop.</p>
         </div>
             <div class="card-column">
-                <img class="trapholt-img-1" src="../assets/trapholt-img-1.png" alt="">
-                <img class="trapholt-img-2" src="../assets/trapholt-img-2.png" alt="">
+                <img class="trapholt-img-1" src="../assets/sustainia-img-1.JPEG" alt="">
+                <img class="trapholt-img-2" src="../assets/sustainia-img-2.JPEG" alt="">
             </div>
 
         </div>

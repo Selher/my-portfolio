@@ -4,13 +4,13 @@
         <div class="trapholt-card">
 
         <div class="card-column">
-            <h3>Design & Development</h3>
-            <p>Website for Trapholt</p>
-            <p class="p1">This project was made in a group of four. We had to create a new website for the museum Trapholt for a specific target group. A classmate and I designed it in Adobe XD and then we coded it I Visual Studio Code. </p>
+            <h3>Content Creation</h3>
+            <p>Invitation</p>
+            <p class="p1">This was for our student couslor at school </p>
         </div>
             <div class="card-column">
-                <img class="trapholt-img-1" src="../assets/trapholt-img-1.png" alt="">
-                <img class="trapholt-img-2" src="../assets/trapholt-img-2.png" alt="">
+                <img class="trapholt-img-1" src="../assets/invitation-img-1.jpg" alt="">
+                <img class="trapholt-img-2" src="../assets/invitation-img-2.jpg" alt="">
             </div>
 
         </div>

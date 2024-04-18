@@ -38,7 +38,9 @@
                 <p>Website for Trapholt</p>
                 <img class="trapholt-img-1" src="../assets/trapholt-img-1.png" alt="">
                 <img class="trapholt-img-2" src="../assets/trapholt-img-2.png" alt="">
-                <button class="see-more-button">SEE MORE</button>
+                <router-link to="/trapholt"> <!-- Specify the path to the details view -->
+    <button class="see-more-button">SEE MORE</button>
+  </router-link>
                 </div>
 
                 <div class="project-card">
@@ -46,7 +48,9 @@
                 <p>Infographics for Trapholt</p>
                 <img class="infographic-img-1" src="../assets/infographic-img-1.png" alt="">
                 <img class="infographic-img-2" src="../assets/infographic-img-2.png" alt="">
-                <button class="see-more-button">SEE MORE</button>
+                <router-link to="/infographics"> <!-- Specify the path to the details view -->
+    <button class="see-more-button">SEE MORE</button>
+  </router-link>
                 </div>
 
                 <div class="project-card">
@@ -54,7 +58,9 @@
                 <p>Sustainia Poster</p>
                 <img class="sustainia-img-1" src="../assets/sustainia-img-1.JPEG" alt="">
                 <img class="sustainia-img-2" src="../assets/sustainia-img-2.JPEG" alt="">
-                <button class="see-more-button">SEE MORE</button>
+                <router-link to="/sustainia"> <!-- Specify the path to the details view -->
+    <button class="see-more-button">SEE MORE</button>
+  </router-link>
                 </div>
 
                 <div class="project-card">
@@ -62,7 +68,9 @@
                 <p>Invitation</p>
                 <img class="invitation-img-1" src="../assets/invitation-img-1.jpg" alt="">
                 <img class="invitation-img-2" src="../assets/invitation-img-2.jpg" alt="">
-                <button class="see-more-button">SEE MORE</button>
+                <router-link to="/invitation"> <!-- Specify the path to the details view -->
+    <button class="see-more-button">SEE MORE</button>
+  </router-link>
                 </div>
 
                 <div class="project-card">
@@ -70,7 +78,9 @@
                 <p>ReOps App</p>
                 <img class="repos-img" src="../assets/repos-img.png" alt="">
                 <img class="repos-img" src="../assets/repos-img-2.png" alt="">
-                <button class="see-more-button">SEE MORE</button>
+                <router-link to="/reops"> <!-- Specify the path to the details view -->
+    <button class="see-more-button">SEE MORE</button>
+  </router-link>
                 </div>
             </div>
 
