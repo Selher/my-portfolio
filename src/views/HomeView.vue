@@ -2,7 +2,7 @@
     <main>
        <div class="image-text-container">
         <div class="image-box">
-            <img class="me-img" src="../assets/me.jpg" alt="Your Image">
+            <img class="me-img" src="../assets/selfie.JPEG" alt="Your Image">
         </div>
 
         <div class="intro-text">
@@ -142,14 +142,17 @@
                 <h3 class="contact-info">
                     Contact information
                 </h3>
-
+                
                 <p class="contact-links">
+                    <i class="fas fa-phone"></i>
                     +45 20917773
                 </p>
                 <p class="contact-links">
+                    <i class="fas fa-envelope"></i>
                     salma-hersi@hotmail.com
                 </p>
                 <p class="contact-links">
+                    <i class="fab fa-linkedin"></i>
                     www.linkedin.com/in/salmahersi
                 </p>
             </div>
@@ -217,7 +220,7 @@
      }
     .me-img{
         width: 50%;
-        height: 250px;
+        height: 70vh;
         object-fit: cover;
          
      } 
