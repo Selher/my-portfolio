@@ -10,17 +10,10 @@ import { RouterLink } from 'vue-router';
                 <div class="my-portfolio">
                     <h1>Salma Hersi</h1>
                 </div>
-                <!-- <ul class="nav-routes">
-                    
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#project-section">Projects</a></li>
-                    <li><a href="#about-section">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    
-                </ul> -->
+               
 
                 <ul class="nav-routes">
-                                      
+                    <li><a href="/">HOME</a></li>                  
                     <li><a href="#project">PROJECTS</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#contact">CONTACT</a></li>
