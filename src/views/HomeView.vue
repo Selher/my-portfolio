@@ -100,7 +100,8 @@
         <p>I am deeply enthusiastic about design and web development. I love the whole creative journey, from coming up with ideas to finishing a project. Collaborating within a team environment is something I cherish greatly, as it allows me to contribute and thrive alongside like-minded individuals.I'm super curious about everything around me, I thoroughly enjoy meeting new people, exchanging thoughts, and most importantly, working together to bring forth remarkable creations. This curiosity also drives me to keep learning new skills and staying up-to-date with the latest trends. This curiosity also drives me to keep learning new skills and staying up-to-date with the latest trends. 
         </p>
         <p>Want to know more you're welcome to read my CV below or click and watch my video cv</p>
-        <button class="cv-button">DOWNLOAD CV</button>
+        <button class="cv-button" onclick="window.open('CVSH.pdf','_blank')">DOWNLOAD CV</button>
+       
         
     </div>
         <div class="card-column">
