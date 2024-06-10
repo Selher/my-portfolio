@@ -14,77 +14,17 @@
         </div>
     </div>
     <!-- Project afsnit -->
-<div id="project" class="projet-section">
-    <div class="projects">
-      <h2>PROJECTS</h2>
+    <div class="project-container">
+    <div id="app-2">
+      <div class="project-row" v-for="projectCard in projectCard" :key="projectCard.id">
+        <ProjectCard 
+          :title="projectCard.title" 
+          :description="projectCard.description"
+          :image="projectCard.image"
+        />
+      </div>
     </div>
-
-    
-            <div class="card-container">
-            
-                <div class="project-card">
-                <h3>Design & Development</h3>
-                <p>Website for La Cabra</p>
-                <img class="lacabra-img-1" src="../assets/lacabra-img-1.png" alt="">
-                <img class="lacabra-img-2" src="../assets/lacabra-img-2.png" alt="">
-                <router-link to="/lacabra"> <!-- Specify the path to the details view -->
-    <button class="see-more-button">SEE MORE</button>
-  </router-link>
-                <!-- <button class="see-more-button">SEE MORE</button> -->
-                </div>
-
-                <div class="project-card">
-                <h3>Design & Development</h3>
-                <p>Website for Trapholt</p>
-                <img class="trapholt-img-1" src="../assets/trapholt-img-1.png" alt="">
-                <img class="trapholt-img-2" src="../assets/trapholt-img-2.png" alt="">
-                <router-link to="/trapholt"> <!-- Specify the path to the details view -->
-    <button class="see-more-button">SEE MORE</button>
-  </router-link>
-                </div>
-
-                <div class="project-card">
-                <h3>Content Creation</h3>
-                <p>Infographics for Trapholt</p>
-                <img class="infographic-img-1" src="../assets/infographic-img-1.png" alt="">
-                <img class="infographic-img-2" src="../assets/infographic-img-2.png" alt="">
-                <router-link to="/infographics"> <!-- Specify the path to the details view -->
-    <button class="see-more-button">SEE MORE</button>
-  </router-link>
-                </div>
-
-                <div class="project-card">
-                <h3>Content Creation</h3>
-                <p>Sustainia Poster</p>
-                <img class="sustainia-img-1" src="../assets/sustainia-img-1.JPEG" alt="">
-                <img class="sustainia-img-2" src="../assets/sustainia-img-2.JPEG" alt="">
-                <router-link to="/sustainia"> <!-- Specify the path to the details view -->
-    <button class="see-more-button">SEE MORE</button>
-  </router-link>
-                </div>
-
-                <div class="project-card">
-                <h3>Content Creation</h3>
-                <p>Invitation</p>
-                <img class="invitation-img-1" src="../assets/invitation-img-1.jpg" alt="">
-                <img class="invitation-img-2" src="../assets/invitation-img-2.jpg" alt="">
-                <router-link to="/invitation"> <!-- Specify the path to the details view -->
-    <button class="see-more-button">SEE MORE</button>
-  </router-link>
-                </div>
-
-                <div class="project-card">
-                <h3>User Experience</h3>
-                <p>ReOps App</p>
-                <img class="repos-img" src="../assets/repos-img.png" alt="">
-                <img class="repos-img" src="../assets/repos-img-2.png" alt="">
-                <router-link to="/reops"> <!-- Specify the path to the details view -->
-    <button class="see-more-button">SEE MORE</button>
-  </router-link>
-                </div>
-            </div>
-
-</div>
+  </div> 
 
 
 <!-- About section -->
@@ -179,29 +119,79 @@
     </main>
 </template>
     
-    <script setup>
-    /* get to know me knappen */
-    const scrollToAbout = () => {
-        const aboutSection = document.querySelector('.about');
-        aboutSection.scrollIntoView({ behavior: 'smooth' });
+    <script >
+    /* Ville gerne have haft endnu et billede men kunne ikke få det rigtigt. Jeg prøvede at bruge require() men det gad ikke indlæse det korrekt. Og billederne er ikke den korrekte størrelse, er det fordi jeg skal ændre størrelsen på dem inden jeg sætter dem ind? */
+    import ProjectCard from '../components/ProjectCard.vue';
+    import imageOne from '../assets/trapholt-img-1.png';
+    import imageTwo from '../assets/lacabra-img-1.png';
+    import imageThree from '../assets/sustainia-img-1.jpeg';
+    import imageFour from '../assets/invitation-img-1.jpg';
+    import imageFive from '../assets/infographic-img-1.png';
+    import imageSix from '../assets/repos-img.png';
+
+export default {
+  name: 'App',
+  components: {
+    ProjectCard
+  },
+  data() {
+    return {
+      projectCard: [
+        { 
+          id: 1, 
+          title: 'Trapholt', 
+          description: 'Hjemmeside for Trapholt Museum i Kolding.',
+          image: imageOne   
+        },
+        { 
+          id: 2, 
+          title: 'La Cabra', 
+          description: 'Hjemmeside for La Cabra Coffee',
+          image: imageTwo
+        },
+        { 
+          id: 3, 
+          title: 'Sustainia', 
+          description: 'Plakat design for Sustainia, et skoleprojekt.',
+          image: imageThree
+        },
+        {
+          id: 4,
+          title: 'Invitation',
+          description: 'Invitation til skolens studievejleder',
+          image: imageFour
+        },
+        {
+          id: 5,
+          title: 'Infographic',
+          description: 'Trifolder til Trapholt Museum i Kolding',
+          image: imageFive
+        },
+        {
+          id: 6,
+          title: 'Reops',
+          description: 'Reops, en app prototype til faget UX',
+          image: imageSix
+        }
+      ]
     };
+  }
+};
+
+
+
+
+</script>
+
+
+
+
 
     
   
-    </script>
     
     <style lang="scss" scoped>
-    /* main{
-       display: flex;
-       flex-direction: row;
-       align-items: center;
-       max-width: 550px;
-       margin: 0 auto;
-       padding: 40px 16px; 
-
-       ingen grund til at give din main en styles fordi den virker bedre uden.
-           
-    }  */ 
+   
     .image-text-container{
         display: flex;
     }
@@ -309,148 +299,35 @@
 
     /* Projects afsnit */
 
-    .projects{
-        margin-top: 100px;
-        
-    }
-    h2{
-        display: inline-block;
-        font-size: 30px;
-        margin-left: 15%;
-        margin-bottom: 30px;
-        border-bottom: 2px solid black;
-    }
 
-    .card-container {
+
+    .project-container {
+        display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.project-row {
+    width:33.333% ;
+}
+
+#app-2 {
+font-family: Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #2c3e50;
+  margin: 5vh 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Distribute cards evenly in the container */
-  max-width: 70%;
-  margin: auto;
-    }
-
-.project-card {
-  width: calc(33.33% - 20px); /* Adjust width of each card */
-  background-color: white;
-  margin-bottom: 15px;
-  padding: 10px;
-  
-  border: black 2px solid;
-  overflow: hidden; /* Hide overflowing content */
+  justify-content: space-between;
   
 }
 
 
 
-.lacabra-img-1{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    object-fit: contain;
-}
-.lacabra-img-2{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    object-fit: contain;
-}
-.trapholt-img-1{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    object-fit: contain;
-}
-.trapholt-img-2{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    object-fit: contain;
-}
-.infographic-img-1{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    object-fit: contain;
-}
-.infographic-img-2{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    object-fit: contain;
-}
-.sustainia-img-1{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    object-fit: contain;
-}
-.sustainia-img-2{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    object-fit: contain;
-}
-.invitation-img-1{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    object-fit: contain;
-}
-.invitation-img-2{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    object-fit: contain;
-}
-.repos-img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    object-fit: contain;
-}
-
-
-.see-more-button{
-    background-color: black;
-        color: white;
-        padding: 10px;
-        border: none;
-        
-        
-    }
-    .see-more-button:hover{
-        background-color: #333;
-        color: white;
-    }
 
 
 
-
-@media screen and (max-width: 768px) {
-    .projects{
-        margin-top: 50px;
-        
-    }
-  .project-card {
-    width: calc(50% - 20px); /* Adjust width for smaller screens */
-  }
-  h2 {
-        font-size: 20px; /* Adjust font size for smaller screens */
-    }
-    
-
-}
 
 
 /* About section */
@@ -543,6 +420,9 @@ h2{
     margin-top: 15px; /* Adjust margin for smaller screens */
   }
 
+  .project-row {
+    width: 50%; /* Full width for columns on smaller screens */
+  }
 }
 
 
